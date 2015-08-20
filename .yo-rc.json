@@ -1,0 +1,17 @@
+{
+  "generator-lb": {
+    "name": "lightning_beetle",
+    "features": [
+      "includeFEFramework",
+      "includeModernizr",
+      "includejQuery",
+      "includeLightingFly"
+    ],
+    "jQuery": "includejQuery2",
+    "feFramework": "includeBootstrap",
+    "sassCompilator": "libSass",
+    "ES6": false,
+    "multiLanguage": false,
+    "testFramework": false
+  }
+}

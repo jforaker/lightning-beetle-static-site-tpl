@@ -1,6 +1,4 @@
-//
-   Created by jakeforaker on 8/19/15.
-//block content
+
 .navbar.navbar-default.navbar-fixed-top(role='navigation')
     .container
         .navbar-header
@@ -9,33 +7,12 @@
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-            a.navbar-brand(href='#')
-                | #{project.name}
+            a.navbar-brand(href='/') #{project.name}
         .navbar-collapse.collapse
-            ul.nav.navbar-nav
-                li.active
-                    a(href='#') Home
-                li
-                    a(href='#about') About
-                li
-                    a(href='#contact') Contact
-                li.dropdown
-                    a.dropdown-toggle(href='#', data-toggle='dropdown')
-                        | Dropdown
-                        span.caret
-                    ul.dropdown-menu(role='menu')
-                        li
-                            a(href='#') Action
-                        li
-                            a(href='#') Another action
-                        li
-                            a(href='#') Something else here
-                        li.divider
-                        li.dropdown-header Nav header
-                        li
-                            a(href='#') Separated link
-                        li
-                            a(href='#') One more separated link
+            ul.nav.navbar-nav.navbar-left
+                each link in project.navLinks
+                    li(class = (currentPage == link.key ? 'active' : null))
+                        a(href = link.href)= link.label
             ul.nav.navbar-nav.navbar-right
                 li
                     a(href='../navbar/') Default
@@ -43,4 +20,4 @@
                     a(href='../navbar-static-top/') Static top
                 li.active
                     a(href='./') Fixed top
-        // /.nav-collapse
+            .nav-collapse

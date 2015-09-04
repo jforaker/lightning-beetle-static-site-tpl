@@ -1,18 +1,19 @@
 extends layouts/_default
 
+block link
+    -var currentPage = 'foo';
+
 block content
     // Sample intro
-
-    include modules/_jumbotron
-
     div.container
         // Example row of columns
         div.row
             div.col-md-4
-                h2 Headingss
-                p Doneczz id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                h2 FOO
                 p
-                    a.btn.btn-default(href='/foo.html', role='button') View details &raquo;
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                p
+                    a.btn.btn-default(href='#', role='button') View details &raquo;
             div.col-md-4
                 h2 Heading
                 p

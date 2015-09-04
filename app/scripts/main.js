@@ -2,4 +2,4 @@
 
 var myApp = myApp || {};
 
-console.log('Hodd luck!');
+console.log('good luckss!!!');

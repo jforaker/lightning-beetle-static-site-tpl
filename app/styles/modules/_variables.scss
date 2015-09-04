@@ -1,0 +1,32 @@
+// Our variables
+$base-font-family: 'Raleway-Regular', sans-serif;
+$glyph-fonts: 'Glyphicons Halflings';
+$regular-font: 'Raleway-Regular';
+$semibold-font: 'Raleway-SemiBold';
+$bold-font: 'Raleway-Bold';
+$raleway: 'Raleway', sans-serif;
+
+$base-font-size: 16px;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit: 30px;
+$nav-button-width: 245px;
+
+$text-color: gray;
+$background-color: white;
+$brand-color: #107180;
+
+$border-color: #d3d3d3;
+
+$grey-color: #4b4b4b;
+$dark-grey: #474747;
+$grey-color-light: lighten($text-color, 15%);
+$grey-color-dark: darken($text-color, 25%);
+
+$global-border-radius: 3px;
+
+$mq-xs: "(max-width: 767px)";
+$mq-sm: "(min-width: 768px) and (max-width: 991px)";
+$mq-md: "(min-width: 992px) and (max-width: 1199px)";
+$mq-lg: "(min-width: 1200px)";

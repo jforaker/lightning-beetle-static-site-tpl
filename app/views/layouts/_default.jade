@@ -5,6 +5,7 @@ doctype html
 <!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
 <!--[if gt IE 9]>      <html class="no-js gt-ie9"> <![endif]-->
 <!--[if !IE]> <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
+
 head
     meta(charset="utf-8")
     title lightning_beetle
@@ -23,9 +24,10 @@ head
     //- endbuild -->
 body
 
-    include ../modules/_nav
+    block link
+        -var currentPage = 'home'; //default
 
-    include ../modules/_jumbotron
+    include ../modules/_nav
 
     main
         block content
@@ -41,5 +43,7 @@ body
     //- endbuild -->
     //- build:js(.tmp) /scripts/main.min.js -->
     script(src="/scripts/main.js")
+    script(src="/scripts/foo.js")
     //- endbuild -->
+
 | </html>

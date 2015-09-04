@@ -1,0 +1,8 @@
+
+$font-path: "../../fonts/";
+
+//raleway
+@include font-face($regular-font, $font-path+$regular-font);
+
+//raleway bold
+@include font-face($bold-font, $font-path+$bold-font);

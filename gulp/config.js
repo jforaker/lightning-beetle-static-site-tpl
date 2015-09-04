@@ -171,7 +171,8 @@ module.exports.modernizr = {
             'html5printshiv',
             'testProp',
             'fnBind'
-        ]
+        ],
+        excludeTests: ['hidden']
     }
 };
 
@@ -250,4 +251,4 @@ module.exports.wiredep = {
             overides: {}
         }
     }
-}
+};

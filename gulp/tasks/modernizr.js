@@ -8,7 +8,6 @@ var config = require('./../config.js');
 // Lean Modernizr build
 
 gulp.task('modernizr', 'Create modernizr lean build', function () {
-  //return;
   return gulp.src(config.modernizr.src)
     .pipe(modernizr(config.modernizr.cfg))
     .pipe(gulp.dest(config.modernizr.dest));
